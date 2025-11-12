@@ -5,9 +5,7 @@
     <link rel="stylesheet" href="app.css">
     <link rel="icon" type="image/x-icon" href="images/photo_2025-11-12_11-20-09-removebg-preview.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-
-</style>
+ 
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <title>weathering with you </title>
     <style>
@@ -29,7 +27,7 @@
                     </div>
                      <div class="weather-sec">
                             <div>
-                                   <form v-on:submit.prevent="getWeather()"><input type="text" v-model="location" v-on:onChange="getWeather()" placeholder=" find location"/> </form>
+                                   <form v-on:submit.prevent="getWeather()"><input type="text" v-model="location" placeholder=" find location"/> </form>
                             </div>
                             <div class="card">
                             <div class='weather-detail'>
@@ -97,7 +95,7 @@
                             <hr>
                      </div>
                      <div class="footer">
-                          <div class="cprname"><small>©power by <a  href="https://www.waiyankyaw.com" target="_blank">waiyankyaw.com</a><small></div>
+                          <div class="cprname"><small>©power by <a  href="https://www.waiyankyaw.com" target="_blank">waiyankyaw.com</a></small></div>
                      </div>
             </div>
         
@@ -107,5 +105,3 @@
 
 </body>
 </html>
-<!-- https://api.openweathermap.org/data/2.5/ -->
- <!-- b5ba98407243c107002729a05fc9efd9 -->

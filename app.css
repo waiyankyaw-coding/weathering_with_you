@@ -1,6 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
+  
     box-sizing: border-box;
 }
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Momo+Signature&display=swap');
@@ -8,6 +9,9 @@
       background-color: rgba(0, 0, 0, 0.685);
       width: 100vw;
       height: 100vh;
+      overflow: hidden;
+
+      
 }
 .lable{
     font-size: 6.5vw;
@@ -132,9 +136,8 @@
         
        }
        .footer .cprname {
-        position: absolute;
-        bottom: 10px;
-   
+             padding-bottom: 10px;
+             padding-top: 20px;
        }
        .footer .cprname small a {
          color: white;
