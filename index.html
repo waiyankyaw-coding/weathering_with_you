@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon" type="image/x-icon" href="images/photo_2025-11-12_11-20-09-removebg-preview.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+</style>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>weathering with you </title>
+    <style>
+         [v-cloak] {display: none;}
+    </style>
+</head>
+<body>
+    <section   id="weather-app" v-cloak>
+
+            <div class="container"   v-if="!!data && data.name ">
+                     <div>
+                           <h1 class="lable">Weathering With You... </h1>
+                     </div>
+                     <div class="sologan-container">
+                     <div class="main-sologan">
+                           <span>The sky can be beautiful, but it can also bring down rain. That's how life is too.</span>
+                           <small>Hina Amano...</small>
+                     </div>
+                    </div>
+                     <div class="weather-sec">
+                            <div>
+                                   <form v-on:submit.prevent="getWeather()"><input type="text" v-model="location" v-on:onChange="getWeather()" placeholder=" find location"/> </form>
+                            </div>
+                            <div class="card">
+                            <div class='weather-detail'>
+                                <!-- this is default -->
+                                <div v-if="!!data &&  Math.round(data.main.temp) > 20 && Math.round(data.main.temp) < 30">
+                                  <div class="img-con">
+                                       <img src="images/photo_2025-11-12_11-20-50.jpg"/>
+                                  </div>
+                                  <div class="card-sologan">
+                                    <span class="textsolo">
+                                              No matter how hard the rain falls, someday it will stop..
+                                  </span>
+                                </div>
+                                </div>
+                                <!-- this is hot -->
+                                        <div v-if="!!data &&  Math.round(data.main.temp) < 20 && Math.round(data.main.temp) > 10">
+                                  <div class="img-con">
+                                       <img src="images/photo_2025-11-12_11-20-33.jpg"/>
+                                  </div>
+                                  <div class="card-sologan">
+                                    <span class="textsolo">
+                                              I don't care if we can't see the sunshine again. i'd rather be with you.
+                                  </span>
+                                </div>
+                                </div>
+                                <!-- upper 30 -->
+                                                 <div v-if="!!data &&  Math.round(data.main.temp) >= 30 && Math.round(data.main.temp) > 20">
+                                  <div class="img-con">
+                                       <img src="images/photo_2025-11-12_11-20-55.jpg"/>
+                                  </div>
+                                  <div class="card-sologan">
+                                    <span class="textsolo">
+                                              Who cares if we don't see the sun shineagain? I want you more than any blue sky...
+                                  </span>
+                                </div>
+                                </div>
+                                <!-- lower 10 c -->
+                                                    <div v-if="!!data &&  Math.round(data.main.temp) < 10">
+                                  <div class="img-con">
+                                       <img src="images/photo_2025-11-12_11-20-38.jpg"/>
+                                  </div>
+                                  <div class="card-sologan">
+                                    <span class="textsolo">
+                                              The world was crazy, but I was sure that I wanted her more than any blue sky...
+                                  </span>
+                                </div>
+                                </div>
+
+
+                                <div  class="temp-details" v-if="!!data && data.name ">
+                                       <div class="info" v-if="errorMessage=== '' ">
+                                             <div><h5>{{data.name}},{{data.sys.country}}</h5></div>
+                                             <div><h5>{{createDate()}}</h5></div>
+                                             <div><h5>{{Math.round(data.main.temp)}}°C</h5></div>
+                                             <div><h5>{{data.weather[0].main}}</h5></div>
+                                       </div>
+
+                                    
+                                       
+                                </div>
+                                <div v-if="errorMessage!== '' " class="err">{{errorMessage}}</div>
+                     
+                            </div>
+                            </div>
+                            <hr>
+                     </div>
+                     <div class="footer">
+                          <div class="cprname"><small>©power by <a  href="https://www.waiyankyaw.com" target="_blank">waiyankyaw.com</a><small></div>
+                     </div>
+            </div>
+        
+  
+    </section>
+    <script src="app.js"></script>
+
+</body>
+</html>
+<!-- https://api.openweathermap.org/data/2.5/ -->
+ <!-- b5ba98407243c107002729a05fc9efd9 -->

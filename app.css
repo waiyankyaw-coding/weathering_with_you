@@ -1,0 +1,344 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Momo+Signature&display=swap');
+.container {
+      background-color: rgba(0, 0, 0, 0.685);
+      width: 100vw;
+      height: 100vh;
+}
+.lable{
+    font-size: 6.5vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    font-family: 'Momo Signature', cursive;
+    color: rgb(240, 227, 227);
+    }
+    .sologan-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .main-sologan {
+         width: 300px;
+         height: 100px;
+         margin-top: 30px;
+         padding: 15px 20px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+ 
+         font-size: 5vw;
+         color: rgb(245, 245, 245);
+         border-radius: 10px;
+         font-family: 'Luckiest Guy',cursive;
+        backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    /* background-color: rgba(143, 143, 143, 0.75); */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .main-sologan small {
+        font-size: 3vw;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+     .weather-sec div form{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        
+
+     }
+    .weather-sec div form input {
+         width: 220px;
+         height: 40px;
+         padding-left:10px ;
+         border-radius: 7px;
+         outline: none;
+         color: white;
+         border-width: 1px ;
+         border-color:white ;
+         background-color: inherit;
+        
+    }
+    .card{
+        display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 50px;
+    }
+.img-con{
+      display:  flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+}
+    .weather-detail div img{
+         width: 270px;
+         overflow: hidden;
+         border-radius: 7px;
+        border: 1px solid rgb(187, 184, 184);
+      
+  
+ 
+        
+    }
+    .card-sologan{
+        width: 300px;
+    }
+    .textsolo  {
+         font-family: sans-serif;
+         font-size: 3.5vw;
+         font-style:italic;
+         font:bold;
+         color: white;
+
+        
+       }
+       .temp-details .info {
+        color: white;
+        font: bold;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 30px;
+        align-items: center;
+        font-size: 6vw;
+        font-family: sans-serif;
+        
+
+
+       }
+       hr {
+        margin-top: 30px;
+        color: rgb(196, 192, 192);
+        width: 100vw;
+       }
+       .footer {
+        color: white;
+        display: flex ;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+        cursor: pointer;
+        
+        
+       }
+       .footer .cprname {
+        position: absolute;
+        bottom: 10px;
+   
+       }
+       .footer .cprname small a {
+         color: white;
+         text-decoration: none;
+       }
+       .err{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         color: rgb(5, 1, 1);
+      font-weight: 900;
+      font-style: italic;
+     
+
+       }
+       @media screen and (min-width: 430px) {
+  .main-sologan {
+    font-size: 4vw;
+  }
+  .main-sologan small {
+    font-size: 3vw;
+  }
+  .footer{
+    font-size: 3vw;
+  }
+  .weather-detail div img{
+    width: 300px;
+  }
+}
+       @media screen and (min-width: 500px) {
+  .main-sologan {
+    font-size: 3vw;
+  }
+  .main-sologan small {
+    font-size: 2.5vw;
+  }
+  .footer{
+    font-size: 2.7vw;
+  }
+  .weather-detail div img{
+    width:350px;
+  }
+  .card-sologan .textsolo {
+    font-size: 2.8vw;
+  }
+}
+       @media screen and (min-width: 600px) {
+  .main-sologan {
+    font-size: 3vw;
+    width: 400px;
+  }
+  .main-sologan small {
+    font-size: 2.5vw;
+  }
+  .footer{
+    font-size: 2vw;
+  }
+  .weather-detail div img{
+    width: 400px;
+  }
+     .weather-sec div form input{
+        width: 300px;
+     }
+       .card-sologan .textsolo {
+    font-size: 2.5vw;
+  }
+}
+        @media screen and (min-width: 768px) {
+            .lable{
+                font-size: 4vw;
+            }
+  .main-sologan {
+    font-size: 2.5vw;
+    width: 400px;
+  }
+  .main-sologan small {
+    font-size: 2vw;
+  }
+  .footer{
+    font-size: 2vw;
+  }
+  .weather-detail div img{
+    width: 400px;
+  }
+     .weather-sec div form input{
+        width: 300px;
+     }
+       .card-sologan .textsolo {
+    font-size: 2.2vw;
+  }
+  .temp-details .info{
+    font-size: 4vw;
+  }
+} 
+        @media screen and (min-width: 1024px) {
+            .lable{
+                font-size: 4vw;
+            }
+  .main-sologan {
+    font-size: 2vw;
+    width: 500px;
+  }
+  .main-sologan small {
+    font-size: 1.5vw;
+  }
+  .footer{
+    font-size: 1.5vw;
+  }
+  .weather-detail div img{
+    width: 500px;
+    height: 200px;
+  }
+     .weather-sec div form input{
+        width: 350px;
+     }
+       .card-sologan .textsolo {
+    font-size: 1.4vw;
+  }
+  .temp-details .info{
+    font-size: 3vw;
+  }
+} 
+        @media screen and (min-width: 1240px) {
+            .lable{
+                font-size: 3vw;
+            }
+  .main-sologan {
+    font-size: 1.6vw;
+    width: 500px;
+  }
+  .main-sologan small {
+    font-size: 1.1vw;
+  }
+  .footer{
+    font-size: 1.2vw;
+  }
+  .weather-detail div img{
+    width: 500px;
+    height: 200px;
+  }
+     .weather-sec div form input{
+        width: 350px;
+     }
+       .card-sologan .textsolo {
+    font-size: 1.2vw;
+  }
+  .temp-details .info{
+    font-size: 3vw;
+  }
+} 
+   @media screen and (min-width: 1680px) {
+            .lable{
+                font-size: 2vw;
+            }
+  .main-sologan {
+    font-size: 1.2vw;
+    width: 500px;
+  }
+  .main-sologan small {
+    font-size: 1vw;
+  }
+  .footer{
+    font-size: 1vw;
+  }
+  .weather-detail div img{
+    width: 600px;
+    height: 200px;
+  }
+     .weather-sec div form input{
+        width: 350px;
+     }
+       .card-sologan .textsolo {
+    font-size: 1vw;
+  }
+  .temp-details .info{
+    font-size: 2vw;
+  }
+} 
+    @media screen and (min-width: 1920px) {
+            .lable{
+                font-size: 1.7vw;
+            }
+  .main-sologan {
+    font-size: 1vw;
+    width: 500px;
+  }
+  .main-sologan small {
+    font-size: 0.8vw;
+  }
+  .footer{
+    font-size: 0.8vw;
+  }
+  .weather-detail div img{
+    width: 600px;
+    height: 200px;
+  }
+     .weather-sec div form input{
+        width: 350px;
+     }
+       .card-sologan .textsolo {
+    font-size: 0.8vw;
+  }
+  .temp-details .info{
+    font-size: 1.3vw;
+  }
+} 
+ 
